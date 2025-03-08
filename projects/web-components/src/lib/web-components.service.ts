@@ -1,9 +1,12 @@
 import { Injectable } from '@angular/core';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class WebComponentsService {
+  constructor() {}
 
-  constructor() { }
+  getHello(): string {
+    return 'hello this is from web components';
+  }
 }
